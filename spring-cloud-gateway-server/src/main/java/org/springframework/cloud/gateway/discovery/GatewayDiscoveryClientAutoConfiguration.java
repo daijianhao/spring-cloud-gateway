@@ -43,6 +43,9 @@ import static org.springframework.cloud.gateway.support.NameUtils.normalizeFilte
 import static org.springframework.cloud.gateway.support.NameUtils.normalizeRoutePredicateName;
 
 /**
+ *
+ * GatewayDiscoveryClientAutoConfiguration配置的作用是初始化配置路由中的注册发现服务信息
+ *
  * @author Spencer Gibb
  */
 @Configuration(proxyBeanMethods = false)

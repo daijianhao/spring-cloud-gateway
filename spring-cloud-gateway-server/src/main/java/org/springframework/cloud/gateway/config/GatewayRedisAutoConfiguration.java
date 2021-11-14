@@ -39,6 +39,11 @@ import org.springframework.data.redis.core.script.RedisScript;
 import org.springframework.scripting.support.ResourceScriptSource;
 import org.springframework.web.reactive.DispatcherHandler;
 
+/**
+ * GatewayRedisAutoConfiguration 配置作用是初始化初始化 RedisRateLimiter
+ * 限流功能的RequestRateLimiterGatewayFilterFactory
+ * 基于 RedisRateLimiter 实现网关的限流功能
+ */
 @Configuration(proxyBeanMethods = false)
 @AutoConfigureAfter(RedisReactiveAutoConfiguration.class)
 @AutoConfigureBefore(GatewayAutoConfiguration.class)

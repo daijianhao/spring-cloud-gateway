@@ -167,6 +167,21 @@ import static org.springframework.cloud.gateway.config.HttpClientProperties.Pool
 import static org.springframework.cloud.gateway.config.HttpClientProperties.Pool.PoolType.FIXED;
 
 /**
+ *
+ * GatewayAutoConfiguration配置是Spring Cloud Gateway 核心配置类，初始化如下 ：
+ *
+ * NettyConfiguration 底层通信netty配置
+ * GlobalFilter （AdaptCachedBodyGlobalFilter，RouteToRequestUrlFilter，ForwardRoutingFilter，ForwardPathFilter，WebsocketRoutingFilter，WeightCalculatorWebFilter等）
+ * FilteringWebHandler
+ * GatewayProperties
+ * PrefixPathGatewayFilterFactory
+ * RoutePredicateFactory
+ * RouteDefinitionLocator
+ * RouteLocator
+ * RoutePredicateHandlerMapping 查找匹配到 Route并进行处理
+ * GatewayWebfluxEndpoint 管理网关的 HTTP API
+
+ *
  * @author Spencer Gibb
  * @author Ziemowit Stolarczyk
  * @author Mete Alpaslan Katırcıoğlu
